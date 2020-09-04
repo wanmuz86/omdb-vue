@@ -1,18 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+  <h1>My Movie app</h1>
+  <input type="text" name="search"/>
+  <button>Search</button>
   </div>
+  <div>
+    <h2>Results</h2>
+    <div id="section">
+      <div>
+        <img src="">
+        <h3>Tenet</h3>
+        <p>2020 - Film</p>
+      </div> 
+      <div>
+        <img src="">
+        <h3>Tenet</h3>
+        <p>2020 - Film</p>
+      </div> 
+      <div>
+        <img src="">
+        <h3>Tenet</h3>
+        <p>2020 - Film</p>
+      </div> 
+    </div>
+  </div>
+  <div id="more-info">
+    <img src="">
+    <p>Tenet</p>
+    <p>2020</p>
+    <p>Robert Pattingson, Washington </p>
+    <p>plot...</p>
+    
+  </div>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
 
