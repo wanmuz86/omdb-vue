@@ -9,7 +9,7 @@
     <h2>Results</h2>
     <div id="section" >
       <div v-for="film in films" :key="film.imdbID" v-on:click="selectFilm ">
-        <img src="">
+        <img v-bind:src="film.Poster">
         <h3>{{film.Title}}</h3>
         <p>{{film.Year}} - {{film.Type}}</p>
       </div> 
@@ -33,7 +33,7 @@ export default {
   name: 'App',
   methods:{
 selectFilm:function(event){
-
+console.log(event)
   this.selectedFilm = {
       "Title": "Tenet",
       "Year": "2020",
