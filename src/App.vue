@@ -41,7 +41,15 @@
       },
 
       selectFilm:function(film){
-        this.selectedFilm = film
+        // This is wrong!!!!
+        // I should call the second API
+        // replace tt1201607 with imdbID
+        // http://www.omdbapi.com/?i=tt1201607&apikey=87d10179
+
+        // After this API is called, you will get data..
+        // and assign it to selectedFilm
+        /// Then you will have more info
+       // this.selectedFilm = film
       }
     },
     data() {
